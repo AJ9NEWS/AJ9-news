@@ -1,1 +1,330 @@
-index.html
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJ9 NEWS - తెలుగు తాజా వార్తలు</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,"Noto Sans Telugu",sans-serif;
+    background:#f2f3f5;
+    color:#222;
+}
+
+.header{
+    background:#fff;
+    padding:12px 15px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+    border-radius:50%;
+}
+
+.brand{
+    flex:1;
+}
+
+.brand h1{
+    color:#d71920;
+    font-size:25px;
+    font-weight:800;
+}
+
+.brand p{
+    font-size:13px;
+    color:#555;
+}
+
+.live{
+    background:#e60000;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.menu{
+    background:#c40000;
+    color:#fff;
+    padding:10px 12px;
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.breaking{
+    background:#111;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.breaking-title{
+    background:#e00000;
+    padding:10px 13px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.breaking-text{
+    padding:10px 15px;
+    white-space:nowrap;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:15px;
+}
+
+.main-news{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    margin-bottom:18px;
+}
+
+.main-news img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.main-content{
+    padding:15px;
+}
+
+.main-content h2{
+    color:#b40000;
+    font-size:24px;
+    line-height:1.4;
+    margin-bottom:8px;
+}
+
+.main-content p{
+    color:#555;
+    line-height:1.6;
+}
+
+.section-title{
+    background:#d40000;
+    color:#fff;
+    padding:10px 14px;
+    border-radius:6px;
+    margin:18px 0 12px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.news-card{
+    background:#fff;
+    border-radius:9px;
+    overflow:hidden;
+    box-shadow:0 2px 7px rgba(0,0,0,.1);
+}
+
+.news-card img{
+    width:100%;
+    height:145px;
+    object-fit:cover;
+}
+
+.news-card div{
+    padding:10px;
+}
+
+.news-card h3{
+    font-size:17px;
+    line-height:1.45;
+}
+
+.time{
+    display:block;
+    color:#888;
+    font-size:12px;
+    margin-top:7px;
+}
+
+.footer{
+    background:#171717;
+    color:#fff;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:25px;
+}
+
+.footer h2{
+    color:#ff3333;
+    margin-bottom:8px;
+}
+
+.footer p{
+    font-size:13px;
+    color:#ccc;
+    line-height:1.7;
+}
+
+@media(max-width:600px){
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .main-news img{
+        height:210px;
+    }
+
+    .main-content h2{
+        font-size:21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<img src="aj9-logo.jpg" class="logo" alt="AJ9 NEWS Logo">
+
+<div class="brand">
+<h1>AJ9 NEWS</h1>
+<p>తెలుగు తాజా వార్తలు</p>
+</div>
+
+<span class="live">LIVE</span>
+
+</header>
+
+<nav class="menu">
+<a href="#">హోమ్</a>
+<a href="#">తాజా వార్తలు</a>
+<a href="#">ఆంధ్రప్రదేశ్</a>
+<a href="#">తెలంగాణ</a>
+<a href="#">రాజకీయాలు</a>
+<a href="#">సినిమా</a>
+<a href="#">క్రీడలు</a>
+</nav>
+
+<div class="breaking">
+<div class="breaking-title">BREAKING NEWS</div>
+<div class="breaking-text">
+AJ9 NEWS - తెలుగు రాష్ట్రాల తాజా వార్తలు మీ ముందుకు...
+</div>
+</div>
+
+<main class="container">
+
+<div class="main-news">
+
+<img src="aj9-logo.jpg" alt="AJ9 NEWS">
+
+<div class="main-content">
+
+<h2>
+తాజా వార్తలు.. ముఖ్యమైన సమాచారం.. ప్రతి క్షణం మీ ముందుకు
+</h2>
+
+<p>
+AJ9 NEWS ద్వారా తెలుగు రాష్ట్రాల తాజా రాజకీయ,
+స్థానిక, సినిమా, క్రీడలు మరియు ఇతర ముఖ్యమైన వార్తలను
+మీకు అందిస్తున్నాం.
+</p>
+
+</div>
+</div>
+
+<div class="section-title">
+📰 తాజా వార్తలు
+</div>
+
+<div class="news-grid">
+
+<article class="news-card">
+<img src="aj9-logo.jpg" alt="News">
+<div>
+<h3>
+ఆంధ్రప్రదేశ్‌లో తాజా పరిణామాలు.. మరిన్ని వివరాలు త్వరలో
+</h3>
+<span class="time">AJ9 NEWS • ఇప్పుడే</span>
+</div>
+</article>
+
+<article class="news-card">
+<img src="aj9-logo.jpg" alt="News">
+<div>
+<h3>
+ప్రజలకు సంబంధించిన ముఖ్యమైన వార్తలు.. పూర్తి సమాచారం
+</h3>
+<span class="time">AJ9 NEWS • తాజా అప్‌డేట్</span>
+</div>
+</article>
+
+<article class="news-card">
+<img src="aj9-logo.jpg" alt="News">
+<div>
+<h3>
+రాజకీయ రంగంలో కీలక పరిణామాలు.. పూర్తి వివరాలు
+</h3>
+<span class="time">AJ9 NEWS • తాజా వార్త</span>
+</div>
+</article>
+
+<article class="news-card">
+<img src="aj9-logo.jpg" alt="News">
+<div>
+<h3>
+మీ ప్రాంతంలోని వార్తలను AJ9 NEWS ద్వారా తెలుసుకోండి
+</h3>
+<span class="time">AJ9 NEWS • LOCAL NEWS</span>
+</div>
+</article>
+
+</div>
+
+</main>
+
+<footer class="footer">
+<h2>AJ9 NEWS</h2>
+<p>
+తెలుగు తాజా వార్తలు<br>
+వార్తల్లో నిజం • ప్రజల కోసం సమాచారం
+</p>
+
+<p style="margin-top:10px;">
+© 2026 AJ9 NEWS. All Rights Reserved.
+</p>
+</footer>
+
+</body>
+</html>
